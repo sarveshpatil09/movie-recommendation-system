@@ -1,0 +1,12 @@
+import pandas as pd
+
+data = {
+    "Movie": ["Inception", "Titanic", "Avatar", "Interstellar", "The Dark Knight"],
+    "Genre": ["Sci-Fi", "Romance", "Sci-Fi", "Sci-Fi", "Action"],
+    "Rating": [9, 8, 8, 9, 9]
+}
+
+df = pd.DataFrame(data)
+
+print("Movie Recommendation List")
+print(df.sort_values(by="Rating", ascending=False))
